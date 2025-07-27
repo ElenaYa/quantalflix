@@ -84,7 +84,7 @@
                 <div class="col-md-10 col-sm-12">
                     <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
                         <h4 class="section-title">İletişim</h4>
-                        <h1 class="display-5 mb-4">Sorularınız mı Var? Bizimle İletişime Geçin</h1>
+                        <h1 class="display-5 mb-4">Buluttan Yayına Hazır mısınız? Bizimle Hemen Bağlantı Kurun</h1>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">Adres</p>
-                                <h3 class="mb-0">Şehit adem yörük evlilik parkı, Uzunoluk, 07800 Korkuteli/Antalya, Turkey</h3>
+                                <h3 class="mb-0"><a href="https://maps.app.goo.gl/tvEr3qmYmgrdPDzp8" target="_blank" style="color: #c6c7c8;">Şehit adem yörük evlilik parkı, Uzunoluk, 07800 Korkuteli/Antalya, Turkey</a></h3>
                             </div>
                         </div>
                         <div class="bg-light-dark d-flex align-items-center w-100 p-4 mb-4">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">Bizi Arayın</p>
-                                <h3 class="mb-0">+90 242 123 4567</h3>
+                                <h3 class="mb-0"><a href="tel:+902426754567" style="color: #c6c7c8;">+90 242 675 4567</a></h3>
                             </div>
                         </div>
                         <div class="bg-light-dark d-flex align-items-center w-100 p-4">
@@ -116,38 +116,47 @@
                             </div>
                             <div class="ms-4">
                                 <p class="mb-2">E-posta Gönder</p>
-                                <h3 class="mb-0">info@quantalflix.com</h3>
+                                <h3 class="mb-0"><a href="mailto:info@quantalflix.com" style="color: #c6c7c8;">info@quantalflix.com</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form id="contactForm" onsubmit="handleContactForm(event)">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                     <label for="name">Adınız</label>
+                                    <div class="invalid-feedback">
+                                        Lütfen adınızı girin.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                     <label for="email">E-posta Adresiniz</label>
+                                    <div class="invalid-feedback">
+                                        Lütfen geçerli bir e-posta adresi girin.
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                     <label for="subject">Konu</label>
+                                    <div class="invalid-feedback">
+                                        Lütfen bir konu girin.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Mesajınız</label>
+                                                            <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Mesajınız</label>
+                                    </div>
                                 </div>
-                            </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Mesaj Gönder</button>
                             </div>
@@ -159,10 +168,74 @@
     </div>
     <!-- Contact End -->
 
+<!-- FAQ Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h4 class="section-title">Sıkça Sorulan Sorular</h4>
+            <h1 class="display-6 mb-4">Yayına Başlamadan Önce Merak Ettikleriniz</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-12">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item bg-light-dark text-light mb-3 wow fadeInUp" data-wow-delay="0.1s" style="border: 1px solid rgba(224, 48, 253, 0.2);">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" style="border-bottom: 1px solid rgba(224, 48, 253, 0.2);">
+                                Yayın yapmak için güçlü bir bilgisayara ihtiyacım var mı?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Hayır, QuantalFlix'in yenilikçi bulut teknolojisi sayesinde yüksek donanımlı bir bilgisayara ihtiyacınız yok. Ortalama bir internet bağlantısı ve tarayıcı olan herhangi bir cihazdan yayın yapabilirsiniz. Tüm işlemler bizim güçlü sunucularımızda gerçekleştirilir, böylece bilgisayarınızın performansı yayın kalitesini etkilemez. 4K kalitesinde yayın yapmak için bile entry-level bir laptop yeterlidir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light-dark text-light mb-3 wow fadeInUp" data-wow-delay="0.2s" style="border: 1px solid rgba(224, 48, 253, 0.2);">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" style="border-bottom: 1px solid rgba(224, 48, 253, 0.2);">
+                                OBS kurulumu gerekiyor mu?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Kesinlikle hayır! QuantalFlix'in tarayıcı tabanlı OBS çözümü, klasik OBS'nin tüm özelliklerini içerir ve kurulum gerektirmez. Tarayıcınızı açıp giriş yaparak hemen yayına başlayabilirsiniz. Sahne düzenleri, geçişler, efektler ve eklentiler dahil tüm OBS özellikleri bulut üzerinden kullanılabilir. Ayrıca ayarlarınız bulutta saklanır, böylece farklı cihazlarda aynı yapılandırmayı kullanabilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light-dark text-light mb-3 wow fadeInUp" data-wow-delay="0.3s" style="border: 1px solid rgba(224, 48, 253, 0.2);">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" style="border-bottom: 1px solid rgba(224, 48, 253, 0.2);">
+                                Aynı anda birden fazla platformda yayın yapabilir miyim?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Evet! QuantalFlix'in çoklu platform yayın özelliği sayesinde Twitch, YouTube, Facebook ve diğer popüler platformlara aynı anda yayın yapabilirsiniz. Tek bir kontrol panelinden tüm platformlardaki sohbetleri yönetebilir, izleyici etkileşimlerini takip edebilir ve platform özelinde özelleştirmeler yapabilirsiniz. Ayrıca her platform için farklı kalite ayarları belirleyebilir ve yayın başlıklarını otomatik olarak senkronize edebilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-light-dark text-light mb-3 wow fadeInUp" data-wow-delay="0.4s" style="border: 1px solid rgba(224, 48, 253, 0.2);">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" style="border-bottom: 1px solid rgba(224, 48, 253, 0.2);">
+                                Teknik bir sorun yaşarsam destek alabilir miyim?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Kesinlikle! Deneyimli teknik destek ekibimiz 7/24 hizmetinizdedir. Canlı sohbet, e-posta veya telefon üzerinden anında destek alabilirsiniz. Ekibimiz yayın ayarları, platform entegrasyonları, ses/görüntü optimizasyonu ve diğer teknik konularda size yardımcı olacaktır. Ayrıca kapsamlı bilgi bankamızda yaygın sorunların çözümlerini ve detaylı rehberleri bulabilirsiniz. Yayınınızın kesintisiz devam etmesi bizim önceliğimizdir.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQ End -->
 
     <!-- Google Map Start -->
-    <div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-        <iframe class="w-100 mb-n2 no-border map-style" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.1234567890123!2d30.1234567!3d36.7890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c39a1b2c3d4e5f%3A0x1234567890abcdef!2sKorkuteli%2C%20Antalya%2C%20Turkey!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str"></iframe>
+    <div class="container-fluid pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.4662463369377!2d30.210958199999997!3d37.070200799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3fdc549a45bef%3A0x89f5069db5bd862c!2zxZ5laGl0IGFkZW0gecO2csO8ayBwYXJrxLE!5e0!3m2!1sen!2sua!4v1753630517754!5m2!1sen!2sua" style="border:0; width:100vw; height:450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- Google Map End -->
 
@@ -224,6 +297,30 @@
     </div>
     <!-- Footer End -->
 
+    <!-- Contact Form Success Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-bottom border-primary">
+                    <h5 class="modal-title text-primary" id="contactModalLabel">
+                        <i class="fas fa-check-circle me-2"></i>Mesajınız Gönderildi!
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="mb-3">
+                        <i class="fas fa-paper-plane text-primary" style="font-size: 48px;"></i>
+                    </div>
+                    <h4 class="mb-3">Teşekkür Ederiz!</h4>
+                    <p class="mb-0">Mesajınız başarıyla alındı. En kısa sürede size geri dönüş yapacağız.</p>
+                    <small style="color: #e9ecef;">Genellikle 24 saat içinde yanıtlıyoruz.</small>
+                </div>
+                <div class="modal-footer border-top border-primary justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -274,6 +371,66 @@
                 setTimeout(() => {
                     messageBox.classList.add('d-none');
                 }, 3000);
+            }
+        }
+
+        function handleContactForm(event) {
+            event.preventDefault();
+            
+            // Get form elements
+            const form = event.target;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            
+            // Reset previous validation states
+            form.classList.remove('was-validated');
+            
+            // Custom validation
+            let isValid = true;
+            
+            // Validate name (minimum 2 characters)
+            if (name.value.trim().length < 2) {
+                name.setCustomValidity('Adınız en az 2 karakter olmalıdır.');
+                isValid = false;
+            } else {
+                name.setCustomValidity('');
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                email.setCustomValidity('Lütfen geçerli bir e-posta adresi girin.');
+                isValid = false;
+            } else {
+                email.setCustomValidity('');
+            }
+            
+            // Validate subject (minimum 3 characters)
+            if (subject.value.trim().length < 3) {
+                subject.setCustomValidity('Konu en az 3 karakter olmalıdır.');
+                isValid = false;
+            } else {
+                subject.setCustomValidity('');
+            }
+            
+            // Message is optional, no validation needed
+            
+            // Show validation feedback
+            form.classList.add('was-validated');
+            
+            // If form is valid, show success modal
+            if (isValid && form.checkValidity()) {
+                // Hide validation
+                form.classList.remove('was-validated');
+                
+                // Clear form
+                form.reset();
+                
+                // Show success modal
+                const modal = new bootstrap.Modal(document.getElementById('contactModal'));
+                modal.show();
             }
         }
        
