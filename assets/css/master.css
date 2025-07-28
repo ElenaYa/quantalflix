@@ -539,7 +539,7 @@ input:-ms-input-placeholder {
     width: 100px;
     height: 100px;
 }
-
+/* 
 .testimonial-carousel .owl-dots .owl-dot::after {
     position: absolute;
     width: 40px;
@@ -558,7 +558,7 @@ input:-ms-input-placeholder {
     border-radius: 40px;
     transition: .5s;
     opacity: 0;
-}
+} */
 
 .testimonial-carousel .owl-dots .owl-dot.active::after {
     opacity: 1;
