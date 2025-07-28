@@ -1,8 +1,4 @@
-/*!
- * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
- * Copyright 2019-2024 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
- */
+
 
 @font-face {
   font-display: block;
@@ -755,7 +751,7 @@ url("../fonts/bootstrap-icons.woff") format("woff");
 .bi-folder::before { content: "\f3d7"; }
 .bi-folder2-open::before { content: "\f3d8"; }
 .bi-folder2::before { content: "\f3d9"; }
-.bi-../fonts::before { content: "\f3da"; }
+.bi-fonts::before { content: "\f3da"; }
 .bi-forward-fill::before { content: "\f3db"; }
 .bi-forward::before { content: "\f3dc"; }
 .bi-front::before { content: "\f3dd"; }
